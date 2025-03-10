@@ -1,0 +1,30 @@
+The following image files should be included in the appropriate directories:
+
+1. Hero Slider Images:
+   - images/hero/hero-action.jpg (Action movies banner for slider)
+   - images/hero/hero-new.jpg (New releases banner for slider)
+   - images/hero/hero-top.jpg (Top rated banner for slider)
+
+2. Category Images:
+   - images/categories/action.jpg (Action category thumbnail)
+   - images/categories/comedy.jpg (Comedy category thumbnail)
+   - images/categories/drama.jpg (Drama category thumbnail)
+   - images/categories/horror.jpg (Horror category thumbnail)
+   - images/categories/scifi.jpg (Sci-Fi category thumbnail)
+   - images/categories/romance.jpg (Romance category thumbnail)
+   - images/categories/animation.jpg (Animation category thumbnail)
+   - images/categories/thriller.jpg (Thriller category thumbnail)
+   - images/categories/documentary.jpg (Documentary category thumbnail)
+   - images/categories/fantasy.jpg (Fantasy category thumbnail)
+   - images/categories/mystery.jpg (Mystery category thumbnail)
+   - images/categories/family.jpg (Family category thumbnail)
+
+3. Movie Posters:
+   - images/movies/avengers.jpg (Avengers: Endgame poster)
+   - images/movies/joker.jpg (Joker poster)
+   - images/movies/lionking.jpg (The Lion King poster)
+   - images/movies/inception.jpg (Inception poster)
+   - images/movies/parasite.jpg (Parasite poster)
+   - images/movies/darkknight.jpg (The Dark Knight poster)
+
+Note: For actual production use, you would need to replace these with real images. Images should be properly sized and optimized for web use. 
