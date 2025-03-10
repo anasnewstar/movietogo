@@ -1,0 +1,30 @@
+name: Optimize Images
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'images/**'
+  workflow_dispatch:
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Optimize images
+        uses: calibreapp/image-actions@main
+        with:
+          jpegQuality: 80
+          pngQuality: 80
+          webpQuality: 80
+          ignorePaths: 'node_modules/**'
+          
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Optimize images"
+          branch: ${{ github.ref }} 
