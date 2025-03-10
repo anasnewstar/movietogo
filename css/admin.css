@@ -1,0 +1,609 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 300px);
+}
+
+.admin-header {
+    margin-bottom: 30px;
+}
+
+.admin-header h1 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.admin-header p {
+    color: var(--gray-color);
+    font-size: 1.1rem;
+}
+
+/* Admin Tabs */
+.admin-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+    padding: 12px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-color);
+    transition: var(--transition);
+    position: relative;
+}
+
+.tab-button:hover {
+    color: var(--dark-color);
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Admin Actions */
+.admin-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-actions h2 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+/* Admin Filters */
+.admin-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.filter-group select,
+.filter-group input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: var(--dark-color);
+}
+
+/* Admin Table */
+.admin-table {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.admin-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.admin-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.admin-table img {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-active {
+    background-color: #e6f7e6;
+    color: #28a745;
+}
+
+.status-inactive {
+    background-color: #f8f8f8;
+    color: #6c757d;
+}
+
+.status-featured {
+    background-color: #fff3cd;
+    color: #ffc107;
+}
+
+.status-approved {
+    background-color: #e6f7e6;
+    color: #28a745;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #ffc107;
+}
+
+.status-spam {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.action-btn {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.edit-btn:hover {
+    color: #007bff;
+}
+
+.delete-btn:hover {
+    color: #dc3545;
+}
+
+.view-btn:hover {
+    color: #17a2b8;
+}
+
+.approve-btn:hover {
+    color: #28a745;
+}
+
+.reject-btn:hover {
+    color: #dc3545;
+}
+
+/* Admin Pagination */
+.admin-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.page-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--dark-color);
+    transition: var(--transition);
+}
+
+.page-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    min-width: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--dark-color);
+    transition: var(--transition);
+}
+
+.page-number:hover {
+    background-color: #f8f8f8;
+}
+
+.page-number.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Settings Form */
+.settings-form {
+    max-width: 800px;
+}
+
+.settings-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.settings-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="url"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: var(--dark-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group select[multiple] {
+    height: 120px;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: var(--gray-color);
+    font-size: 0.8rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* User Avatar */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Comment Text */
+.comment-text {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* File Upload */
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.upload-label {
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.upload-label:hover {
+    background-color: var(--secondary-color);
+}
+
+#file-name,
+#category-file-name {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.modal-close {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    color: var(--primary-color);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-button {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .admin-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .admin-actions .btn {
+        width: 100%;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+
+    .comment-text {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+
+    .admin-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .admin-table th:nth-child(4),
+    .admin-table td:nth-child(4),
+    .admin-table th:nth-child(5),
+    .admin-table td:nth-child(5) {
+        display: none;
+    }
+}
+
+/* Adding styles for poster preview */
+.poster-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.poster-preview img {
+    max-width: 100px;
+    max-height: 150px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix font display issues */
+#movie-form input::placeholder,
+#movie-form textarea::placeholder,
+#category-form input::placeholder,
+#user-form input::placeholder {
+    color: #aaa;
+    opacity: 1;
+    font-size: 0.9em;
+}
+
+/* Improve form field visibility */
+#movie-form input,
+#movie-form textarea,
+#movie-form select,
+#category-form input,
+#category-form select,
+#user-form input,
+#user-form select {
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Fix multiple select field */
+#movie-genres option {
+    padding: 5px;
+}
+
+#movie-genres option:checked {
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Improve file upload field */
+.file-upload {
+    margin-bottom: 10px;
+}
+
+/* Fix modal content scrolling */
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Ensure the modal is centered properly on all screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-width: 500px;
+    }
+
+    .poster-preview img {
+        max-width: 80px;
+    }
+}

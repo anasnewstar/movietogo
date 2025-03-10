@@ -1,0 +1,272 @@
+/* CSS-based movie posters for MovieToGO */
+
+/* Avengers: Endgame */
+.movie-poster-avengers {
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-avengers::before {
+    content: "A";
+    font-size: 150px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    color: white;
+}
+
+.movie-poster-avengers::after {
+    content: "ENDGAME";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+/* Joker */
+.movie-poster-joker {
+    background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-joker::before {
+    content: "HA HA HA";
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.1;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.movie-poster-joker::after {
+    content: "JOKER";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ff1744;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+/* The Lion King */
+.movie-poster-lionking {
+    background: linear-gradient(135deg, #ff6f00 0%, #ffb300 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-lionking::before {
+    content: "♚";
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    color: white;
+}
+
+.movie-poster-lionking::after {
+    content: "THE LION KING";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+/* Inception */
+.movie-poster-inception {
+    background: linear-gradient(135deg, #263238 0%, #455a64 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-inception::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.05) 10px,
+            rgba(255, 255, 255, 0.05) 20px);
+}
+
+.movie-poster-inception::after {
+    content: "INCEPTION";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* Parasite */
+.movie-poster-parasite {
+    background: linear-gradient(135deg, #006064 0%, #00acc1 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-parasite::before {
+    content: "寄生蟲";
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    color: white;
+}
+
+.movie-poster-parasite::after {
+    content: "PARASITE";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* The Dark Knight */
+.movie-poster-darknight {
+    background: linear-gradient(135deg, #000000 0%, #212121 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-darknight::before {
+    content: "🦇";
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    color: white;
+}
+
+.movie-poster-darknight::after {
+    content: "THE DARK KNIGHT";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* Interstellar */
+.movie-poster-interstellar {
+    background: linear-gradient(135deg, #004d40 0%, #00796b 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-interstellar::before {
+    content: "✦ ✧ ✦";
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.movie-poster-interstellar::after {
+    content: "INTERSTELLAR";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* Black Panther */
+.movie-poster-blackpanther {
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster-blackpanther::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-radial-gradient(circle at 50% 50%,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 10px,
+            transparent 10px,
+            transparent 20px);
+}
+
+.movie-poster-blackpanther::after {
+    content: "BLACK PANTHER";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
