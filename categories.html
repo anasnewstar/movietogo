@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - MovieToGO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="MovieToGO Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for movies...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Banner -->
+    <section class="category-banner">
+        <div class="container">
+            <h1 id="category-title">All Categories</h1>
+            <div class="filter-options">
+                <select id="sort-by">
+                    <option value="popularity">Sort by: Popularity</option>
+                    <option value="date">Sort by: Release Date</option>
+                    <option value="rating">Sort by: Rating</option>
+                    <option value="title">Sort by: Title</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Grid -->
+    <section class="category-genres" id="all-categories-section">
+        <div class="container">
+            <h2>Browse by Genre</h2>
+            <div class="categories-grid">
+                <a href="categories.html?genre=action" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1571646752950-aff04c2b5196?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=crop&ixid=2M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                    </div>
+                    <h3>Action</h3>
+                </a>
+                <a href="categories.html?genre=comedy" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1527224857830-43a7acc85260?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Comedy</h3>
+                </a>
+                <a href="categories.html?genre=drama" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1581905764498-f1b60bae941a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Drama</h3>
+                </a>
+                <a href="categories.html?genre=horror" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1505635552518-3448ff116af3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Horror</h3>
+                </a>
+                <a href="categories.html?genre=scifi" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1506901437675-cde80ff9c746?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Sci-Fi</h3>
+                </a>
+                <a href="categories.html?genre=romance" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Romance</h3>
+                </a>
+                <a href="categories.html?genre=animation" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1633613286991-611fe299c4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Animation</h3>
+                </a>
+                <a href="categories.html?genre=thriller" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Thriller</h3>
+                </a>
+                <a href="categories.html?genre=documentary" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Documentary</h3>
+                </a>
+                <a href="categories.html?genre=fantasy" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Fantasy</h3>
+                </a>
+                <a href="categories.html?genre=mystery" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Mystery</h3>
+                </a>
+                <a href="categories.html?genre=family" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1478071735433-5d8f9a54c5c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Family</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <section class="category-movies">
+        <div class="container">
+            <div class="movies-container">
+                <div class="movies-grid" id="category-movies-grid">
+                    <!-- Movies will be loaded dynamically with JavaScript -->
+                </div>
+                <div class="loader" id="movies-loader">
+                    <div class="spinner"></div>
+                </div>
+                <div class="no-results" id="no-results">
+                    <h3>No movies found.</h3>
+                    <p>Try changing your search criteria or check back later.</p>
+                </div>
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be added dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2><span>Movie</span>ToGO</h2>
+                    <p>Your ultimate movie streaming destination</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="categories.html?genre=action">Action</a></li>
+                            <li><a href="categories.html?genre=comedy">Comedy</a></li>
+                            <li><a href="categories.html?genre=drama">Drama</a></li>
+                            <li><a href="categories.html?genre=horror">Horror</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MovieToGO. All rights reserved.</p>
+                <p class="creator-credit">Designed & Developed by <strong>Rubayet Ahmed Rony</strong> from Bangladesh
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

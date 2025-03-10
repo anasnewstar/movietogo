@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - MovieToGO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="MovieToGO Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for movies...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Results Banner -->
+    <section class="search-banner">
+        <div class="container">
+            <h1>Search Results: <span id="search-query">Loading...</span></h1>
+            <div class="filter-options">
+                <select id="sort-by">
+                    <option value="relevance">Sort by: Relevance</option>
+                    <option value="date">Sort by: Release Date</option>
+                    <option value="rating">Sort by: Rating</option>
+                    <option value="title">Sort by: Title</option>
+                </select>
+                <select id="filter-by">
+                    <option value="all">Filter by: All</option>
+                    <option value="action">Filter by: Action</option>
+                    <option value="comedy">Filter by: Comedy</option>
+                    <option value="drama">Filter by: Drama</option>
+                    <option value="horror">Filter by: Horror</option>
+                    <option value="scifi">Filter by: Sci-Fi</option>
+                    <option value="romance">Filter by: Romance</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Grid -->
+    <section class="search-results">
+        <div class="container">
+            <div class="results-info">
+                <p id="results-count">Found <span id="count">0</span> results</p>
+            </div>
+            <div class="movies-container">
+                <div class="movies-grid" id="search-results-grid">
+                    <!-- Movies will be loaded dynamically with JavaScript -->
+                </div>
+                <div class="loader" id="search-loader">
+                    <div class="spinner"></div>
+                </div>
+                <div class="no-results" id="no-results">
+                    <h3>No movies found.</h3>
+                    <p>Try different keywords or check your spelling.</p>
+                    <a href="index.html" class="btn">Back to Home</a>
+                </div>
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be added dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggested Searches -->
+    <section class="suggested-searches" id="suggested-searches-section">
+        <div class="container">
+            <h2>You might be interested in</h2>
+            <div class="suggested-tags">
+                <a href="search.html?q=action+movies" class="tag">Action Movies</a>
+                <a href="search.html?q=new+releases" class="tag">New Releases</a>
+                <a href="search.html?q=sci+fi" class="tag">Sci-Fi</a>
+                <a href="search.html?q=top+rated" class="tag">Top Rated</a>
+                <a href="search.html?q=comedy" class="tag">Comedy</a>
+                <a href="search.html?q=horror" class="tag">Horror</a>
+                <a href="search.html?q=animated" class="tag">Animated</a>
+                <a href="search.html?q=popular" class="tag">Popular</a>
+            </div>
+            <div class="popular-searches">
+                <h3>Popular Searches</h3>
+                <div class="popular-searches-grid" id="popular-searches-grid">
+                    <!-- Popular searches will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2><span>Movie</span>ToGO</h2>
+                    <p>Your ultimate movie streaming destination</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="categories.html?genre=action">Action</a></li>
+                            <li><a href="categories.html?genre=comedy">Comedy</a></li>
+                            <li><a href="categories.html?genre=drama">Drama</a></li>
+                            <li><a href="categories.html?genre=horror">Horror</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MovieToGO. All rights reserved.</p>
+                <p class="creator-credit">Designed & Developed by <strong>Rubayet Ahmed Rony</strong> from Bangladesh
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

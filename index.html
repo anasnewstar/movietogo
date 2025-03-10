@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieToGO - Watch Movies Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="MovieToGO Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for movies...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>The Shawshank Redemption</h2>
+                    <p>The highest-rated movie of all time, IMDb 9.3/10</p>
+                    <a href="movie.html?id=12" class="btn">Watch Now</a>
+                </div>
+                <div class="slide-img" style="background-image: url('images/hero/hero-shawshank.jpg');">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>The Dark Knight</h2>
+                    <p>Christopher Nolan's masterpiece, IMDb 9.0/10</p>
+                    <a href="movie.html?id=6" class="btn">Watch Now</a>
+                </div>
+                <div class="slide-img" style="background-image: url('images/hero/hero-darkknight.jpg');">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Inception</h2>
+                    <p>A mind-bending sci-fi thriller, IMDb 8.8/10</p>
+                    <a href="movie.html?id=4" class="btn">Watch Now</a>
+                </div>
+                <div class="slide-img" style="background-image: url('images/hero/hero-inception.jpg');">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Movies Section -->
+    <section class="featured-movies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Movies</h2>
+                <a href="categories.html?type=featured" class="view-all">View All</a>
+            </div>
+            <div class="movies-grid" id="featured-movies-grid">
+                <!-- Movies with real posters -->
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/avengers.jpg') !important;">
+                        <span class="quality-tag">4K</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Avengers: Endgame</h3>
+                        <div class="movie-meta">
+                            <span>2019</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 8.4</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=1" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/joker.jpg') !important;">
+                        <span class="quality-tag">HD</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Joker</h3>
+                        <div class="movie-meta">
+                            <span>2019</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 8.5</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=2" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/lionking.jpg') !important;">
+                        <span class="quality-tag">HD</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Lion King</h3>
+                        <div class="movie-meta">
+                            <span>2019</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 6.9</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=3" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/inception.jpg') !important;">
+                        <span class="quality-tag">4K</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Inception</h3>
+                        <div class="movie-meta">
+                            <span>2010</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 8.8</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=4" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="categories.html?genre=action" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1571646752950-aff04c2b5196?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=crop&ixid=2M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                    </div>
+                    <h3>Action</h3>
+                </a>
+                <a href="categories.html?genre=comedy" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1527224857830-43a7acc85260?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Comedy</h3>
+                </a>
+                <a href="categories.html?genre=drama" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1581905764498-f1b60bae941a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Drama</h3>
+                </a>
+                <a href="categories.html?genre=horror" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1505635552518-3448ff116af3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Horror</h3>
+                </a>
+                <a href="categories.html?genre=scifi" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1506901437675-cde80ff9c746?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Sci-Fi</h3>
+                </a>
+                <a href="categories.html?genre=romance" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Romance</h3>
+                </a>
+                <a href="categories.html?genre=animation" class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1633613286991-611fe299c4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <h3>Animation</h3>
+                </a>
+                <a href="categories.html" class="category-card view-all-card">
+                    <div class="view-all-content">
+                        <i class="fas fa-th-large"></i>
+                        <h3>View All Categories</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Movies Section -->
+    <section class="latest-movies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Additions</h2>
+                <a href="categories.html?type=latest" class="view-all">View All</a>
+            </div>
+            <div class="movies-grid" id="latest-movies-grid">
+                <!-- Latest movies with real posters -->
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/joker.jpg') !important;">
+                        <span class="quality-tag">HD</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Parasite</h3>
+                        <div class="movie-meta">
+                            <span>2019</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 8.6</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=5" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/avengers.jpg') !important;">
+                        <span class="quality-tag">HD</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Dark Knight</h3>
+                        <div class="movie-meta">
+                            <span>2008</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 9.0</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=6" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/inception.jpg') !important;">
+                        <span class="quality-tag">4K</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Interstellar</h3>
+                        <div class="movie-meta">
+                            <span>2014</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 8.6</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=7" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('images/movies/lionking.jpg') !important;">
+                        <span class="quality-tag">HD</span>
+                        <div class="movie-overlay"></div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Black Panther</h3>
+                        <div class="movie-meta">
+                            <span>2018</span>
+                            <span><i class="fas fa-star" style="color: gold;"></i> 7.3</span>
+                        </div>
+                        <div class="movie-buttons">
+                            <a href="movie.html?id=8" class="btn"><i class="fas fa-play"></i> Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to get updates on new movies and features.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="MovieToGO Logo" class="footer-logo-img">
+                    </a>
+                    <p>Your ultimate movie streaming destination</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="categories.html?genre=action">Action</a></li>
+                            <li><a href="categories.html?genre=comedy">Comedy</a></li>
+                            <li><a href="categories.html?genre=drama">Drama</a></li>
+                            <li><a href="categories.html?genre=horror">Horror</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MovieToGO. All rights reserved.</p>
+                <p class="creator-credit">Designed & Developed by <strong>Rubayet Ahmed Rony</strong> from Bangladesh
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/lazy-load.js"></script>
+</body>
+
+</html>
